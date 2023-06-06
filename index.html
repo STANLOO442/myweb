@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Course</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-img"><img src="images/image-1.avif" alt=""></div>
+    <div class="wrapper">
+        <div class="header">
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            <div class="nav">
+
+                <svg class="close" xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-align-center" viewBox="0 0 16 16"> <path d="M8 1a.5.5 0 0 1 .5.5V6h-1V1.5A.5.5 0 0 1 8 1zm0 14a.5.5 0 0 1-.5-.5V10h1v4.5a.5.5 0 0 1-.5.5zM2 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7z"/> </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneakers</a></li>
+                    <li><a href="#">Players</a></li>
+                </ul>
+
+
+                
+            </div>
+           <svg  class="menu" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="white" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" id="mainIconPathAttribute"></path> </svg>
+                    
+        </div>
+        <div class="hero">
+            <h1>Regain your Confidence in Court </h1>
+            <p>A shoe built with purpose and to take your game to the next level.</p>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+            
+        </div>
+        <div class="more-info">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Upper mesh material provides common shoe wear jalingo for soweto money buy whatever</p>
+                </div>
+                <img src="images/image-2.avif" alt="Another Shoe">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Upper mesh material provides common shoe wear jalingo for soweto money buy whatever</p>
+                </div>
+                <img src="images/image-3.avif" alt="Another Shoe">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Lightweight</p>
+                    <p class="desc">Upper mesh material provides common shoe wear jalingo for soweto money buy whatever</p>
+                </div>
+                <img src="images/image-4.avif" alt="Another Shoe">
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+    
+          const menu = document.querySelector('.menu ')
+          const close = document.querySelector('.close ')
+          const nav = document.querySelector('.nav ')
+
+          menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+          })
+          close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+          })
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+
+body{
+    margin: 1.5em;
+    font-family:'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.hero-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('..images/image1');
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-x: 20%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    animation: introLoad 3s forwards; 
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.nav{
+    position:fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 10;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    
+}
+.open-nav{
+  transform: translateX(0%); 
+}
+.nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+}
+.nav ul li a{
+    color: black;
+    display: block;
+    padding: .75em 2em;
+    
+}
+.nav ul li a:hover{
+    background: rgb(235, 235, 235);
+}
+.nav .close{
+    width: 2em;
+    height: 1.5em;
+    float:right;
+    margin: 2em;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    width:2em;
+    margin-top: -6em;
+    cursor:pointer;
+}
+.hero{
+    color:white;
+    height:90vh;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-top: 2em;
+    line-height: 3.3rem;
+}
+.hero p{
+    font-size: 1.4rem;
+}
+.hero svg{
+    position: absolute;
+    bottom: 2em;
+    width: 1em;
+    animation: moveArrow 1s alternate-reverse infinite;
+}
+.more-info img{
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+}
+.more-info .title{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.more-info .desc{
+    line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 680px){
+    body{
+        margin: 1.5em 5em;
+        font-family:'Poppins', sans-serif;
+    }
+}
+@media only screen and (min-width: 920px){
+    .menu{
+        display: none;
+    }
+    .nav{
+        transform:translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    .nav .close{
+        display: none;
+    }
+    .nav ul{
+        display: flex;
+        margin: 0;
+    }
+    .nav ul li a{
+        color: white;
+        padding: .5em 1.5em;
+        font-size: .9rem;
+    }
+    .nav ul li a:hover{
+        background: none;
+        text-decoration:underline;
+    }
+    .hero-img{
+        left:unset;
+        right:0;
+        width:50%;
+        height: 42em;
+    }
+    .logo{
+        color:black;
+    }
+    .logo span{
+        color:red;
+    }
+    .hero {
+        color:black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 14em;
+    }
+    .hero svg {
+        position: unset;
+        stroke:black;
+        padding-top: 5em;
+        
+    
+        
+    }
+    .hero svg path{
+        fill:green
+    
+    }
+    .feature{
+        display:grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3em;
+        margin-bottom: 5em;
+    }
+    .feature img{
+        width: 25em;
+    
+    }
+    .feature .content{
+        text-align: right;
+        width: 25em;
+    }
+    .feature.left{
+       grid-template-areas:  "left right";
+    }
+    .feature.left img{
+        grid-area: left;
+    }
+    .feature.left .content{
+        text-align: left;
+        width: 25em;
+        justify-self: left;
+    }
+    .more-info{
+        margin-top: 20em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        margin: auto;
+        width: 12000px auto;
+
+    }
+    .hero svg {
+        position: unset;
+        stroke:black;
+        padding-top: 5em;
+        
+    }
+    .more-info{
+    margin-top: 20em;
+    }
+    .feature{
+       gap: 0; 
+    }
+}
+
+@keyframes introLoad{
+    from{
+        clip-path: polygon(0 1%, 100% 0%, 100% 0, 0 1%);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes moveArrow{
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        tranform: translateY(0)
+    }
+
+    
+}
+@keyframes moveDown{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        tranform: translateY(0);
+        opacity: 1;
+    }
+
+    
+}
+
+
+
+
+
